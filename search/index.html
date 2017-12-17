@@ -1,0 +1,137 @@
+--- 
+layout: default 
+title: Home 
+initItem: 2
+perPageItem: 2
+---
+
+<div class="posts">
+</div>
+<script>
+	/**
+	 * get the param from url
+	 * 
+	 * @param {Object} name
+	*/
+	function getQueryString(name) {
+		var reg = new RegExp("(^|&)" + name + "=([^&]*)(&|$)");
+		var r = window.location.search.substr(1).match(reg);
+		if(r != null) return unescape(r[2]);
+		return null;
+	}
+	var keyword = decodeURI(decodeURI(getQueryString('q')));
+	var pageNum = 0;
+	var perPageItem = {{page.perPageItem}};
+	var startNum = 0;
+	var endNum = {{page.initItem}};
+	var totalNum = 0;
+	var $loading = $("<div class='loading' style='text-align:center !important;'><img src='/public/img/loading.gif'></div>");
+	
+	var articles;
+	$.getJSON("/public/json/search.json").done(function(data) {
+		articles = data;
+		totalNum = articles.length;
+		initArticles(); 
+	});
+	
+	/**
+	 * get the bottom offset of an element
+	*/
+	function getOffsetBottom(selector){
+		if($(selector).offset()==undefined){
+			return 1;
+		}
+		var offsetTop = $(selector).offset().top;
+		var documentHeight = $(selector).height();
+		var offsetBottom = $(window).height()-(offsetTop+documentHeight);
+		return offsetBottom;
+	}
+
+	/**
+	 * init the frist batch of articles to activate waypoint
+	 */
+	function initArticles() {
+		var offsetBottom = getOffsetBottom('div.post:last');
+		while(offsetBottom>0 && startNum<totalNum){
+			getArticles();
+			offsetBottom = getOffsetBottom('div.post:last');
+			increment();
+		}
+		if($('div.post:last').length==0){
+			$('div.posts').html('<p>There are no post matches.</p>')
+		}else{
+			getArticlesInfinite();
+		}
+	}
+
+	function getArticlesInfinite(){
+		getArticles();
+		createWaypoint();
+	}
+	
+	function getArticles() {
+		$('div.posts').append($loading);
+		var htmlArr = new Array();
+		var currentData = null;
+		endNum = endNum>totalNum?totalNum:endNum;
+		for(var i=startNum; i<endNum;i++){
+			currentData = articles[i];
+			if(!matchKeyword(currentData)) continue;
+			htmlArr.push('<div class="post">');
+			htmlArr.push('<h1 class="post-title">');
+			htmlArr.push('<a href="');
+			htmlArr.push(currentData.url);
+			htmlArr.push('">');
+			htmlArr.push(currentData.title);
+			htmlArr.push('</a></h1>');
+			htmlArr.push('<span class="post-date"></span>');
+			htmlArr.push(currentData.date);
+			htmlArr.push('</span>');
+			htmlArr.push('<div class="post-content">');
+			htmlArr.push(currentData.excerpt);
+			htmlArr.push('</div></div>');
+		}
+		$('div.loading').remove();
+		$('.posts').append(htmlArr.join('').toString());
+	}
+	
+	function createWaypoint() {
+		$('div.posts div.post:last').waypoint(function(direction) {
+			if(startNum==totalNum) {
+				this.destroy();
+				return; //all articles have been loaded
+			}
+			if(direction == "down") {
+				this.destroy();
+				increment();
+				getArticlesInfinite();
+			}
+		}, {
+			offset: 'bottom-in-view'
+		});
+	}
+	
+	/**
+	 * check whether the article matches the keyword 
+	 * @param {Object} post
+	 */
+	function matchKeyword(post){
+		var contentAll = new Array();
+		contentAll.push(post.title);
+		contentAll.push(post.tag);
+		contentAll.push(post.category);
+		contentAll.push(post.content);
+		if(contentAll.join('').toString().indexOf(keyword)==-1){
+			return false;
+		}else{
+			return true;
+		}
+	}
+	
+	function increment(){
+		startNum = endNum; //let next startNum equals last endNum
+		pageNum++;
+		endNum += perPageItem;
+	}
+	
+</script>

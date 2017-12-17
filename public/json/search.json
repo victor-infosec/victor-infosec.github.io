@@ -1,0 +1,16 @@
+---
+layout: null
+---
+[
+  {% for post in site.posts %}
+    {
+      "title"    : "{{ post.title | escape }}",
+      "category" : "{{ post.category }}",
+      "tag" 		 : "{{ post.tag }}",
+      "url"      : "{{ post.url }}",
+      "date"     : "{{ post.date | date_to_string }}",
+      "excerpt"  : "{{ post.excerpt | strip_html | slugify | regexreplace: '-(?=[^u4e00-u9fa5])', ''}}",
+      "content"  : "{{ post.content | strip_html | slugify | regexreplace: '-(?=[^u4e00-u9fa5])', ''}}"
+    } {% unless forloop.last %},{% endunless %}
+  {% endfor %}
+]

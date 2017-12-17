@@ -1,0 +1,14 @@
+---
+layout: default
+---
+
+<div class="posts">
+{% if site.tags[page.slug] %}
+ {% for post in site.tags[page.slug] %}
+ 	{% include posts.html %}
+ {% endfor %}
+  <script src="{{ site.baseurl }}/public/js/pagination.js"></script>
+{% else %}
+  <p>There are no post in this tag.</p>
+{% endif %}
+</div>

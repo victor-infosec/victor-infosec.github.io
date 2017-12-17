@@ -1,0 +1,50 @@
+---
+layout: default
+---
+
+{% assign post = page %}
+<div class="post">
+	<!--setup categories-->  
+  {% assign category = site.my_categories | where: "slug", post.category %}
+  {% assign category = category[0] %}
+  {% if category %}
+    {% capture category_content %}<a class="label" href="{{ category.url }}" style="background-color:{{ category.color }}">{{ category.cn }}</a>{% endcapture %}
+  {% endif %}
+	<!--setup categories end-->
+	
+	<!--setup tags--> 
+  {% if post.tags.size > 0 %}
+    {% capture tags_content %} <span class="icon-price-tag{% if post.tags.size > 1 %}s{% endif %}"></span> {% endcapture %}
+    {% for post_tag in post.tags %}
+      {% assign tag = site.my_tags | where: "slug", post_tag %}
+      {% if tag %}
+        {% assign tag = tag[0] %}
+        {% capture tags_content_temp %}{{ tags_content }}<a href="{{ tag.url }}">{{ tag.name }}</a>{% if forloop.last == false %}, {% endif %}{% endcapture %}
+        {% assign tags_content = tags_content_temp %}
+      {% endif %}
+    {% endfor %}
+  {% endif %}
+	<!--setup tags end--> 
+  <h1 class="post-title">{{ page.title }}</h1>
+  <span class="post-date">{{ page.date | date_to_string }}</span>
+  <div>{{ content }}</div>	
+  <p class="m-t-3 text-muted font-helvetica">
+    <small>{% if category_content %} 分类: </small>{{ category_content }}<small>{% endif %}{{ tags_content }}</small>
+  </p>
+</div>
+
+<div class="related">
+  <h2>Related Posts</h2>
+  <ul class="related-posts">
+    {% for post in site.related_posts limit:3 %}
+      <li>
+        <h3>
+          <a href="{{ site.baseurl }}{{ post.url }}">
+            {{ post.title }}
+            <small>{{ post.date | date_to_string }}</small>
+          </a>
+        </h3>
+      </li>
+    {% endfor %}
+  </ul>
+</div>

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+	{% include head.html %}
+
+	<body>
+
+		{% include sidebar.html %}
+
+		<!-- Wrap is the content to shift when toggling the sidebar. We wrap the
+         content to avoid any CSS collisions with our real content. -->
+		<div class="wrap">
+			<div class="masthead">
+				<div class="container">
+					<img src="/public/img/logo.png" class="masthead-img masthead-inner masthead-shrink"/>						
+					<h3 class="masthead-title masthead-inner masthead-shrink" >
+					{% if page.url contains 'category' %}
+						<a href="{{page.url}}" title="Home">{{ page.cn }}</a>
+			            <small class="font-kt">分类文章</small>					    
+    				{% elsif page.url contains 'tag' %}
+    					<a href="{{ page.url }}" title="Home">{{ page.cn }}</a>
+			            <small>按标签分类</small>
+    				{% else %}
+    					<a href="{{ site.baseurl }}/" title="Home">{{ site.title }}</a>
+			            <small class="font-kt">{{ site.tagline }}</small>
+    				{% endif %}
+					</h3>
+					<div class="masthead-nav masthead-inner">
+						{% include navbar.html %}
+					</div>
+				</div>
+			</div>
+
+			<div class="container content">
+				{{ content }}
+			</div>
+		</div>
+
+		<label for="sidebar-checkbox" class="sidebar-toggle"></label>
+
+		<script>
+			(function(document) {
+				var toggle = document.querySelector('.sidebar-toggle');
+				var sidebar = document.querySelector('#sidebar');
+				var checkbox = document.querySelector('#sidebar-checkbox');
+
+				document.addEventListener('click', function(e) {
+					var target = e.target;
+					if(!checkbox.checked ||
+						sidebar.contains(target) ||
+						(target === checkbox || target === toggle)) return;
+
+					checkbox.checked = false;
+				}, false);
+				
+				var article = document.getElementById('articles');
+				var isExpanded = article.getAttribute('expanded');
+				var categoryName = document.getElementsByName('category-name');
+				article.addEventListener('click', function(e) {
+					if(isExpanded){
+						isExpanded = false;
+						for (var i=0;i<categoryName.length;i++){
+							categoryName[i].setAttribute('class','sidebar-nav-item category-name-hide');
+						}					
+					}else{
+						isExpanded = true;
+						for (var i=0;i<categoryName.length;i++){
+							categoryName[i].setAttribute('class','sidebar-nav-item category-name-show');
+						}
+					}
+				}, false);
+			})(document);
+			$('#search-btn').on('click',function(){
+				$('#search-bar').submit();
+			});
+		</script>
+	<script src="{{ site.baseurl }}/public/js/typeahead-custom.js"></script>
+	</body>
+
+</html>

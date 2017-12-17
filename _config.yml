@@ -1,0 +1,74 @@
+# use collections to realize category
+collections:
+  my_categories:
+    output: true
+    permalink: /blog/category/:name/
+  my_tags:
+    output: true
+    permalink: /blog/tag/:name/  
+#sidebar names
+sidebar:
+  home:              主页
+  about:             关于
+  articles:          文章
+  programming:       编程
+  essay:             随笔
+
+# Permalinks
+permalink:           pretty
+
+# Conversion
+markdown:    kramdown
+highlighter: rouge
+excerpt_separator: "\n\n\n"
+
+# Setup
+title:               我
+name:                example
+namecn:              我
+tagline:             '的博客'
+description:         "我的博客"
+url:                 https://example.github.io
+baseurl:             ''
+gems:
+  - jekyll-feed
+  - jekyll-seo-tag
+
+# About/contact
+author:
+  name:              example
+  url:               https://example.github.io
+  email:             example@example.com
+
+sass:
+  style: compressed
+
+defaults:
+  -
+    scope:
+      path: ""
+      type: pages
+    values:
+      layout: page
+  -
+    scope:
+      path: ""
+      type: posts
+    values:
+      layout: post
+  -
+    scope:
+      path: ""
+      type: my_categories
+    values:
+      layout: blog_by_category
+  
+  -
+    scope:
+      path: ""
+      type: my_tags
+    values:
+      layout: blog_by_tag
+    
+# Custom vars
+version:             1.0.0
