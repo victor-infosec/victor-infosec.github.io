@@ -12,7 +12,6 @@ sidebar:
   about:             关于我
   following:         文章搜集
   books:             读书笔记
-  @essay:             随笔
 
 # Permalinks
 permalink:           pretty
