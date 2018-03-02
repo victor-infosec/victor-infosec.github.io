@@ -94,7 +94,7 @@ lang: zh
   [32]: https://xianzhi.aliyun.com/forum/topic/2074
   [33]: https://xianzhi.aliyun.com/forum/topic/2075
   [34]: https://xianzhi.aliyun.com/forum/topic/2076
-  [35]: https://isc.sans.edu/diary.html
+  [35]: https://isc.sans.edu/forums/diary/Why+we+Dont+Deserve+the+Internet+Memcached+Reflected+DDoS+Attacks/23389
   [36]: https://blog.rapid7.com/2018/02/27/the-flip-side-of-memcrashed/
   [37]: http://sec-redclub.com/index.php/archives/776/
   [38]: http://wiki.ioin.in/url/rkGb
