@@ -1,7 +1,8 @@
 ---
 layout: page
-title: 关于
+title: 关于我
 ---
 
-### 欢迎访问我的博客。我在这里发布技术文章和生活随笔。  
-### 博客基于Jekyll主题[Lanyon](http://lanyon.getpoole.com)构建，同时整合了[minddust.com](http://www.minddust.com)的样式。
+### Victor，一位信息安全爱好者，特别喜欢各类攻防技巧。
+### 勿以恶小而为之，勿以善小而不为。
+Email：victor_xxx@yeah.net

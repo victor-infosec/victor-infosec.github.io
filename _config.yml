@@ -9,10 +9,10 @@ collections:
 #sidebar names
 sidebar:
   home:              主页
-  about:             关于
-  articles:          文章
-  programming:       编程
-  essay:             随笔
+  about:             关于我
+  following:         文章搜集
+  books:             读书笔记
+  @essay:             随笔
 
 # Permalinks
 permalink:           pretty
@@ -23,11 +23,11 @@ highlighter: rouge
 excerpt_separator: "\n\n\n"
 
 # Setup
-title:               我
+title:               Victor
 name:                example
-namecn:              我
-tagline:             '的博客'
-description:         "我的博客"
+namecn:              Victor
+tagline:             'cybersecurity'
+description:         "Victor's blog"
 url:                 https://victor-infosec.github.io
 baseurl:             ''
 gems:
@@ -36,9 +36,9 @@ gems:
 
 # About/contact
 author:
-  name:              example
-  url:               https://example.github.io
-  email:             example@example.com
+  name:              Victor
+  url:               https://victor-infosec.github.io
+  email:             victor_xxx@yeah.net
 
 sass:
   style: compressed

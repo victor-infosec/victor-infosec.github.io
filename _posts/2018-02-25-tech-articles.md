@@ -1,0 +1,45 @@
+---
+layout: post
+title: 信息安全技术文章汇总 | 20180225
+key: 20180225
+category: following
+tags:
+  - 技术文章汇总
+lang: zh
+---
+
+1. [MySQL UDF Exploitation](https://osandamalith.com/2018/02/11/mysql-udf-exploitation/)
+2. [TCP-Starvation](https://www.exploit-db.com/docs/english/44026-tcp-starvation.pdf)
+3. [The Easiest Metasploit Guide You’ll Ever Read](https://a.ndronic.us/the-easiest-metasploit-guide-youll-ever-read/)
+4. [Zero Day Zen Garden: Windows Exploit Development - Part 0 Dev Setup & Advice](http://www.shogunlab.com/blog/2017/08/11/zdzg-windows-exploit-0.html)
+5. [Zero Day Zen Garden: Windows Exploit Development - Part 1 Stack Buffer Overflow Intro](http://www.shogunlab.com/blog/2017/08/19/zdzg-windows-exploit-1.html)
+6. [Zero Day Zen Garden: Windows Exploit Development - Part 2 JMP to Locate Shellcode](http://www.shogunlab.com/blog/2017/08/26/zdzg-windows-exploit-2.html)
+7. [Zero Day Zen Garden: Windows Exploit Development - Part 3 Egghunter to Locate Shellcode](http://www.shogunlab.com/blog/2017/09/02/zdzg-windows-exploit-3.html)
+8. [Zero Day Zen Garden: Windows Exploit Development - Part 4 Overwriting SEH with Buffer Overflows](http://www.shogunlab.com/blog/2017/11/06/zdzg-windows-exploit-4.html)
+9. [Zero Day Zen Garden: Windows Exploit Development - Part 5 Return Oriented Programming Chains](http://www.shogunlab.com/blog/2018/02/11/zdzg-windows-exploit-5.html)
+10. [Quickpost: Using nmap With Tallow Tor proxy](https://blog.didierstevens.com/2018/02/26/quickpost-using-nmap-with-tallow-tor-proxy/)
+11. [解决DEDECMS历史难题--找后台目录](https://xianzhi.aliyun.com/forum/topic/2064)
+12. [劫持影子论坛的思路](http://www.moonsec.com/post-822.html)
+13. [Runas replacement tool](http://www.cnblogs.com/xiaoxiaoleo/p/8468470.html)
+14. [Edge Type Confusion利用：从内存读写到控制流程](https://www.anquanke.com/post/id/98775)
+15. [Cobalt Strike神器高级教程利用Aggressor脚本编写目标上线邮件提醒](https://www.anquanke.com/post/id/98829)
+16. [Archery：开源漏洞评估和管理工具](http://www.freebuf.com/sectool/162864.html)
+17. [2017中国高级持续性威胁（APT）研究报告](https://www.anquanke.com/post/id/98972)
+18. [新手Python黑客工具入门（续）](http://www.freebuf.com/column/163418.html)
+19. [新手Python黑客工具入门](http://www.freebuf.com/column/162632.html)
+20. [SecWiki周刊（第208期）](http://www.freebuf.com/column/163405.html)
+21. [物联网（IoT）无线电通信渗透测试Part1：数字通信基本原理](http://www.freebuf.com/articles/wireless/162866.html)
+22. [JavaScript的反调试技术（上篇）](http://www.4hou.com/technology/10470.html)
+23. [MacOS中恶意的Installer Plugin利用](http://www.4hou.com/technology/10452.html)
+24. [漏洞组合拳-重置dedecms管理员后台密码重现及分析](http://www.freebuf.com/vuls/163344.html)
+25. [专注Web安全与移动安全](http://www.freebuf.com/column/163379.html)
+26. [Web Service 和 Web API渗透测试指南（一）](http://www.4hou.com/technology/10453.html)
+27. [FortiGuard分析:让多款 JavaScript 挖矿代码无处遁形](http://www.4hou.com/info/10462.html)
+28. [一秒找出用时间和随机数生成的上传文件名](http://www.freebuf.com/articles/web/163058.html)
+29. [SecWiki News 2018-02-25 Review](http://www.sec-wiki.com/?2018-02-25)
+30. [腾讯玄武实验室安全动态推送](http://xuanwulab.github.io/cn/secnews/2018/02/26/index.html)
+31. [Jackson反序列化远程代码执行漏洞](http://pirogue.org/2018/01/12/jackson-databind-rce/)
+32. [Retrieving malware over Tor on Windows](https://isc.sans.edu/diary.html)
+33. [分析CVE-2018-6376 – Joomla！二阶SQL注入](http://www.freebuf.com/articles/web/162822.html)
+34. [Altdns：运用置换扫描技术的子域发现工具](http://www.freebuf.com/sectool/162774.html)
+35. [WAF攻防之SQL注入篇](http://galaxylab.org/waf%E6%94%BB%E9%98%B2%E4%B9%8Bsql%E6%B3%A8%E5%85%A5%E7%AF%87/)
