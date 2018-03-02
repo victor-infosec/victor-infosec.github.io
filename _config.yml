@@ -28,7 +28,7 @@ name:                example
 namecn:              我
 tagline:             '的博客'
 description:         "我的博客"
-url:                 https://example.github.io
+url:                 https://victor-infosec.github.io
 baseurl:             ''
 gems:
   - jekyll-feed
