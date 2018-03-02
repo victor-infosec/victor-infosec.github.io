@@ -23,8 +23,8 @@ excerpt_separator: "\n\n\n"
 
 # Setup
 title:               Victor
-name:                example
-namecn:              Victor
+name:                victor-infosec
+namecn:              victor-infosec
 tagline:             'cybersecurity'
 description:         "Victor's blog"
 url:                 https://victor-infosec.github.io
