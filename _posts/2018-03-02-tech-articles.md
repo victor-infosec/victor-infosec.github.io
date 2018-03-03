@@ -1,0 +1,41 @@
+---
+layout: post
+title: 信息安全技术文章汇总 | 20180302
+key: 20180302
+category: following
+tags:
+  - 技术文章汇总
+lang: zh
+---
+1.  [LuLu：一款macOS的开源防火墙](http://www.freebuf.com/sectool/162989.html)
+2. [5分钟教程：如何通过UART获得root权限](http://www.freebuf.com/geek/163312.html)
+3. [对Avzhan DDoS bot的深入介绍及样本的层层分析](http://www.4hou.com/technology/10518.html)
+4. [五大开源OSINT工具介绍](http://www.4hou.com/tools/10483.html)
+5. [Adobe Acrobat Reader DC Document ID Remote Code Execution Vulnerability](https://www.talosintelligence.com/vulnerability_reports/TALOS-2017-0505)
+6. [SecWiki News 2018-03-02 Review](http://www.sec-wiki.com/?2018-03-02)
+7. [渗透的本质是信息搜集（第一季）](https://www.secpulse.com/archives/68959.html)
+8. [高清无码！比鬼片还刺激！且听“诡娃”远控的这首惊魂曲](http://www.mottoin.com/109055.html)
+9. [CVE-2018-4087 PoC: 利用bluetoothd绕过沙盒](https://www.anquanke.com/post/id/99276)
+10. [Python大法之从火车余票查询到打造抢Supreme神器](http://www.freebuf.com/column/164021.html)
+11. [照片有-美女图片暗藏杀机，威胁追踪揪出元凶](http://www.freebuf.com/column/164018.html)
+12. [安卓端渗透工具DVHMA：自带漏洞的混合模式APP](http://www.freebuf.com/news/163057.html)
+13. [APK查壳工具PKID](https://www.secpulse.com/archives/68886.html)
+14. [甲方安全建设之Windows横向移动攻击的检测](http://www.4hou.com/technology/10430.html)
+15. [GlobeImposter勒索病毒技术分析报告](http://www.freebuf.com/articles/system/163792.html)
+16. [GANDCRAB勒索软件着眼“达世币”，安天智甲有效防护](http://www.4hou.com/technology/10529.html)
+17. [SeaCMS v6.45前台Getshell 代码执行漏洞\(附批量getshell脚本\)](https://bbs.ichunqiu.com/thread-35085-1-1.html)
+18. [漏洞分析与实践之基于SAML实现的单点登录系统](http://xianzhi.aliyun.com/forum/topic/2093)
+19. [2015移动安全挑战赛第一题AliCrackme_1解密](https://www.52pojie.cn/thread-704305-1-1.html)
+20. [KDE桌面版Kali入手入坑指南，新界面新感觉](https://bbs.ichunqiu.com/thread-35066-1-1.html)
+21. [Password Filter DLL在渗透测试中的应用](http://xianzhi.aliyun.com/forum/topic/2092)
+22. [我的面经，渗透测试](http://xianzhi.aliyun.com/forum/topic/2091)
+23. [【山石网科-每日国内外技术分享-2018.3.2-第39期】](http://xianzhi.aliyun.com/forum/topic/2090)
+24. [How Hackers Bypassed an Adobe Flash Protection Mechanism](https://securingtomorrow.mcafee.com/mcafee-labs/hackers-bypassed-adobe-flash-protection-mechanism/)
+25. [深度剖析Memcached 超大型DRDoS攻击——中国电信云堤&绿盟科技联合发布](http://blog.nsfocus.net/memcached-drdos-analysis/)
+26. [McAfee Uncovers Operation Honeybee, a Malicious Document Campaign Targeting Humanitarian Aid Groups](https://securingtomorrow.mcafee.com/mcafee-labs/mcafee-uncovers-operation-honeybee-malicious-document-campaign-targeting-humanitarian-aid-groups/)
+27. [BotConf见闻启示录](http://blog.nsfocus.net/botcon-sharing/)
+28. [SQL注入ByPass的一些小技巧](http://wiki.ioin.in/url/1klO)
+29. [FLASH 0day\(CVE-2018-4878\)从POC到利用](https://paper.seebug.org/536/)
+30. [secure-ios-app-dev](Secure%20iOS%20application%20development)
+31. [XuanwuLab Security Daily News Push - 2018-03-02](http://xuanwulab.github.io/cn/secnews/2018/03/02/index.html)
+32. [Another TCP based IDS bypass technique. CVE-2018-6794](http://seclists.org/fulldisclosure/2018/Mar/2)
