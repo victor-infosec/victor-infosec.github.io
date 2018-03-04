@@ -15,9 +15,6 @@ title: Home
 
 </div>
 
-{% for post in paginator.posts %}
-    <a href="{{ post.url }}">{{ post.title }}</a>
-{% endfor %}
 {% if paginator.total_pages > 1 %}
 <div class="pagination">
   {% if paginator.previous_page %}
