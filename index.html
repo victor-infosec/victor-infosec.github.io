@@ -4,11 +4,11 @@ title: Home
 ---
 
 
-{% for post in paginator.posts %}
+
 
 <div class="posts">
 {% if site.posts %}
-  {% for post in site.posts %}
+  {% for post in paginator.posts %}
  	  {% include posts.html %}
   {% endfor %}
   <script src="{{ site.baseurl }}/public/js/pagination.js"></script>
@@ -18,7 +18,6 @@ title: Home
 
 </div>
 
-{% endfor %}
 
 {% if paginator.total_pages > 1 %}
 <div class="pagination">
