@@ -14,7 +14,7 @@ sidebar:
   books:             读书笔记
 
 # Permalinks
-permalink:           pretty
+#permalink:           pretty
 
 # Conversion
 markdown:    kramdown
@@ -71,3 +71,6 @@ defaults:
     
 # Custom vars
 version:             1.0.0
+
+paginate: 5
+paginate_path: "page:num"
