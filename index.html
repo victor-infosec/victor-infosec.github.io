@@ -3,6 +3,9 @@ layout: default
 title: Home
 ---
 
+
+{% for post in paginator.posts %}
+
 <div class="posts">
 {% if site.posts %}
   {% for post in site.posts %}
@@ -14,6 +17,8 @@ title: Home
 {% endif %}
 
 </div>
+
+{% endfor %}
 
 {% if paginator.total_pages > 1 %}
 <div class="pagination">
