@@ -1,11 +1,11 @@
 # use collections to realize category
-collections:
-  my_categories:
-    output: true
-    permalink: /blog/category/:name/
-  my_tags:
-    output: true
-    permalink: /blog/tag/:name/  
+# collections:
+  # my_categories:
+    # output: true
+    # permalink: /blog/category/:name/
+  # my_tags:
+    # output: true
+    # permalink: /blog/tag/:name/
 #sidebar names
 sidebar:
   home:              主页
