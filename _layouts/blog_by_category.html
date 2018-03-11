@@ -4,13 +4,11 @@ layout: default
 
 <div class="posts">
 {% if site.categories[page.slug] %}
- {% for post in site.categories[page.slug] %}
-  {% if post in paginator.posts %}
- 	{% include posts.html %}
-  {% else %}
-    <p>There are no post in this category.</p>
-  {% endif %}
- {% endfor %}
+  {% for post in paginator.posts %}
+    {% if post in site.categories[page.slug] %}
+ 	  {% include posts.html %}
+    {% endif %}
+  {% endfor %}
   <script src="{{ site.baseurl }}/public/js/pagination.js"></script>
 {% else %}
   <p>There are no post in this category.</p>
