@@ -3,11 +3,11 @@ layout: default
 ---
 
 <div class="posts">
-  {% for post in paginator.posts %}
 {% if site.categories[page.slug] %}
  {% for post in site.categories[page.slug] %}
+  {% if post in paginator.posts %}
  	  {% include posts.html %}
-  {% endfor %}
+{% endif %}
   {% endfor %}
   <script src="{{ site.baseurl }}/public/js/pagination.js"></script>
 {% else %}
