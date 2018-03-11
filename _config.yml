@@ -2,10 +2,10 @@
 collections:
   my_categories:
     output: true
-    permalink: /category/:name/
+    permalink: /blog/category/:name/
   my_tags:
     output: true
-    permalink: /tag/:name/  
+    permalink: /blog/tag/:name/  
 #sidebar names
 sidebar:
   home:              主页
@@ -72,10 +72,7 @@ defaults:
 # Custom vars
 version:             1.0.0
 
-#paginate: 5
-# paginate_path: "page:num"
-
-gems: [jekyll-paginate-plugin]
-
 paginate: 5
-paginatepath: ['/category/following/page/:num','/page:num']
+paginate_path: "page:num"
+
+paginatepath: ['/blog/category/following/page/:num',]
