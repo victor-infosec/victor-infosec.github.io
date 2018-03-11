@@ -1,7 +1,7 @@
 # use collections to realize category
 # collections:
-  # my_categories:
-    # output: true
+  my_categories:
+    output: true
     # permalink: /blog/category/:name/
   # my_tags:
     # output: true
