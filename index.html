@@ -5,12 +5,12 @@ title: Home
 
 <div class="posts">
 {% if site.posts %}
-  {% for post in site.posts %}
+  {% for post in paginator.posts %}
  	  {% include posts.html %}
   {% endfor %}
   <script src="{{ site.baseurl }}/public/js/pagination.js"></script>
 {% else %}
-  <p>There are no posts.</p>
+  <!-- <p>There are no posts.</p> -->
 {% endif %}
 
 </div>
