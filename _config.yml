@@ -75,4 +75,4 @@ version:             1.0.0
 paginate: 5
 paginate_path: "page:num"
 
-paginatepath: ['/blog/category/following/page/:num',]
+paginatepath: ['/blog/category/following/page:num',]
