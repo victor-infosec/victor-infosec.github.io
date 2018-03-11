@@ -74,6 +74,6 @@ defaults:
 version:             1.0.0
 
 paginate: 5
-paginate_path: ["/page:num", "/blog/category/following/page:num"]
+paginate_path: ["page:num", "/blog/category/following/page:num"]
 
 #paginatepath: ['/blog/category/following/page:num',]
