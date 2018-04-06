@@ -50,6 +50,7 @@ CHAPTER 1 What is Penetration Testing?
 ![渗透测试流程1](https://github.com/victor-infosec/victor-infosec.github.io/raw/master/_posts/books/The-Basics-of-Hacking-and-Penetration-Testing/1.png)
 
 这几个步骤并不是依次线性地做完即可，而应该是随着测试的进行与深入，循环进行的，如下：
+
 ![渗透测试流程2](https://github.com/victor-infosec/victor-infosec.github.io/blob/master/_posts/books/The-Basics-of-Hacking-and-Penetration-Testing/2.png)
 
 7、
