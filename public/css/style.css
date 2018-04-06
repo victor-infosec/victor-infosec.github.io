@@ -1,3 +1,7 @@
 div.hidden {display: none;}
 .masthead .container {text-align: end;}.masthead-inner {display: inline-block;}.masthead-img {margin-bottom: 0 !important;margin-right: 1%;width: 8%;float: left;}.masthead-nav,.masthead-title {margin-top: 2.5%;}
 @media (max-width: 48em) {.text-xs-center{text-align: center !important;} .masthead-title,.masthead-shrink{display: none !important;} }@media (min-width: 48em) {.site-name{display: none !important;}}
+.center {
+  text-align: center;
+  margin: 0 auto;
+}
