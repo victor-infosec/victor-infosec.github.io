@@ -46,7 +46,6 @@ CHAPTER 1 What is Penetration Testing?
 
 6、 渗透测试的流程
 已经有很多成熟的渗透测试方法论，不过都大同小异。这本书将其简化为四个步骤，如下：
-
 <div align=center><img src="https://github.com/victor-infosec/victor-infosec.github.io/raw/master/_posts/books/The-Basics-of-Hacking-and-Penetration-Testing/1.png" alt="渗透测试流程1" height="50%" width="50%" /></div>
 
 这几个步骤并不是依次线性地做完即可，而应该是随着测试的进行与深入，循环进行的，如下：
