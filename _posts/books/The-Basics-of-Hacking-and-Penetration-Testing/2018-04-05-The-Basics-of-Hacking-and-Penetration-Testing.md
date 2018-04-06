@@ -53,7 +53,7 @@ CHAPTER 1 What is Penetration Testing?
 
 ![渗透测试流程2](https://github.com/victor-infosec/victor-infosec.github.io/raw/master/_posts/books/The-Basics-of-Hacking-and-Penetration-Testing/2.png)
 
-7、
-
-
+CHAPTER 2 Reconnaissance
+--------------------------------------
+1、
 
