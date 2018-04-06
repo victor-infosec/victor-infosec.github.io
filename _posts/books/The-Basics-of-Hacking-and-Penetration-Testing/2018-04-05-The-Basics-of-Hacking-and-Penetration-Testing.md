@@ -11,16 +11,16 @@ lang: zh
 CHAPTER 1 What is Penetration Testing?
 --------------------------------------
 
-1. 什么是渗透测试？
+1、什么是渗透测试？
 > Penetration testing can be defined as a **legal** and **authorized** attempt to locate and successfully **exploit computer systems** for the purpose of **making those systems more secure**.
 
 渗透测试是通过攻击和入侵系统，发现系统存在的安全问题，帮助用户解决这些问题，从而提高系统的安全性。这是一种合法的、具有授权的网络攻击行为。
 
-2. 渗透测试的技术、方法和工具与现实中攻击者所使用的是相同的。
+2、渗透测试的技术、方法和工具与现实中攻击者所使用的是相同的。
 
 > The general idea is to find security issues by **using the same tools and techniques as an attacker**.
 
-3. 与渗透测试相同的概
+3、与渗透测试相同的概
 
  - Pen testing
  - PT
@@ -30,11 +30,11 @@ CHAPTER 1 What is Penetration Testing?
  - Offensive security
  - Red teaming
 
-4. 白帽子与黑帽子的区别？
+4、白帽子与黑帽子的区别？
 
 > At its core, these differences can be boiled down to three key points: **authorization**, **motivation**, and **intent**.
 
-5. 白盒测试与黑盒测试
+5、白盒测试与黑盒测试
 
 > White box penetration testing, also known as “overt” testing, is very thorough and comprehensive.
 
@@ -52,7 +52,7 @@ CHAPTER 1 What is Penetration Testing?
 这几个步骤并不是依次线性地做完即可，而应该是随着测试的进行与深入，循环进行的，如下：
 ![渗透测试流程2](https://github.com/victor-infosec/victor-infosec.github.io/blob/master/_posts/books/The-Basics-of-Hacking-and-Penetration-Testing/2.png)
 
-7. 
+7、
 
 
 
