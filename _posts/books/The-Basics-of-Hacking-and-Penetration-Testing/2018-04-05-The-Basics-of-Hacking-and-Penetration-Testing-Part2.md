@@ -134,3 +134,47 @@ MetaGooFil
  - SearchDiggity
  - Maltego
  - Robtex
+
+ 
+CHAPTER 3 Scanning
+--------------------------------------
+1、Pings and Ping Sweeps
+
+ - ping
+
+```
+ping target_ip
+```
+
+ - fping
+
+```
+fping –a –g 172.16.45.1 172.16.45.254>hosts.txt
+```
+
+2、Port&Service Scanning
+
+nmap
+
+```
+nmap –sT -p- -Pn 192.168.18.132
+nmap –sT -p- -Pn 192.168.18.1-254
+nmap –sS -p- -Pn 192.168.18.132
+nmap –sU 192.168.18.132
+nmap –sUV 172.16.45.135
+nmap –sX -p- -Pn 192.168.18.132
+nmap –sN -p- -Pn 192.168.18.132
+nmap --script banner 192.168.18.132
+nmap --script vuln 192.168.18.132
+```
+
+3、Vulnerability Scanning
+
+Nessus [https://www.tenable.com/downloads/nessus](https://www.tenable.com/downloads/nessus)
+
+4、 其他扫描工具
+ - OpenVAS
+ - NeXpose
+ - Metasploit
+ - Core Impact
+ - Canvas
