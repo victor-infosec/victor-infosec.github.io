@@ -30,9 +30,9 @@ medusa –h 192.168.18.132 –u ownedb –P /usr/share/john/password.lst –M ss
  - THC Hydra [https://www.thc.org/thc-hydra/](https://www.thc.org/thc-hydra/)
 
 
-3、系统密码破解神器 John the Ripper
+3、系统密码破解神器 **John the Ripper**
 
-本地Windows密码破解
+3.1、本地Windows密码破解
 
 &ensp;&ensp;1、Shut down the target machine.
   
@@ -76,3 +76,85 @@ medusa –h 192.168.18.132 –u ownedb –P /usr/share/john/password.lst –M ss
  <div align="center" markdown="1">
 <img src="https://github.com/victor-infosec/victor-infosec.github.io/raw/master/_posts/books/The-Basics-of-Hacking-and-Penetration-Testing/3.png" alt="渗透测试流程7" height="50%" width="50%" />
 </div>
+
+3.2、远程Windows密码破解
+
+&ensp;&ensp;1、Meterpreter shell session： hashdump
+
+&ensp;&ensp;2、将导出的hash值复制到本地，使用jtr在本地进行破解
+
+3.3、Linux密码破解
+
+两个重要的文件：
+    /etc/passwd
+    /etc/shadow
+    
+```
+unshadow /etc/passwd /etc/shadow > /tmp/linux_hashes.txt
+john /tmp/linux_hashes.txt
+```
+
+4、重置系统密码
+&ensp;&ensp;1、Boot form Kali Linux LiveCD
+&ensp;&ensp;2、Mount Windows system disk
+
+```
+chntpw –i /mnt/sda1/WINDOWS/system32/config/SAM
+```
+
+交互式重置密码
+
+5、网络嗅探
+
+**Hub**：promiscuous mode ＋ Wireshark
+
+**Switch**：promiscuous mode ＋ macof ＋ Wireshark
+
+```
+macof –i eth0 –s 192.168.18.130 –d 192.168.18.2
+```
+
+6、图形化/自动化metasploit
+
+Armitage
+
+CHAPTER5 social engineering
+--------------------------------------
+
+**SET**：交互式社会工程学工具
+
+
+```
+se-toolkit
+```
+
+1.	克隆站点 ＋ 恶意的java applet
+2.	克隆站点 ＋ 获取用户的credential
+3.	其他功能：USB自动运行、端口监听器、发送大量垃圾邮件、Arduino attack（伪装payload）、短信欺骗、自制wifi热点、恶意二维码生成、powershell攻击payload
+
+CHAPTER6 Web-Based Exploitation
+--------------------------------------
+
+1、**The Basics of Web Hacking**
+
+>“1. The ability to intercept requests as they leave your browser. ”
+
+>“2. The ability to find all the web pages, directories, and other files that make up the web application. ”
+
+>“3. The ability to analyze responses from the web application and inspect them for vulnerabilities. ”
+
+2、Vulnerabilities
+
+**SQLi**
+
+**XSS**
+
+3、Tools
+
+**nikto**
+
+**w3af**
+
+**webscrab**
+
+**ZAP**
