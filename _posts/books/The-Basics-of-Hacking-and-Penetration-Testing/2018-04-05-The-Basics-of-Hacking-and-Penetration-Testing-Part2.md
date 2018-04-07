@@ -26,7 +26,8 @@ CHAPTER 2 Reconnaissance
 3.1、Search engine
 
  - Google Hacking
- Googole hacking基本用法：
+ 
+	Googole hacking基本用法：
 	 
 	site:dsu.edu pat engebretson
 	
@@ -41,9 +42,9 @@ CHAPTER 2 Reconnaissance
 	site:dsu.edu filetype:pptx
 
  更全面的Google hacking技术参考;
- \
+ 
  Google Hacking for Penetration Testers 
- \
+ 
  Google Dorks Google Hacking Database (GHDB)	
  
  - other search engines: Yahoo, Bing, Ask, Dogpile,
@@ -63,6 +64,7 @@ CHAPTER 2 Reconnaissance
 3.3、whois
 
  - whois域名
+ 
  通过对域名的whois查询，可以知道域名的注册人、权威DNS服务器等信息。
 
 命令行工具：`whois target_domain`
@@ -87,14 +89,13 @@ CHAPTER 2 Reconnaissance
  3.6、	DNS信息
 
  - nslookup
-
+ 
+```
 	nslookup
-	
 	\> server 8.8.8.8
-	
 	\> set type=any
-	
 	\> baidu.com
+```
 
  - dig
 		
