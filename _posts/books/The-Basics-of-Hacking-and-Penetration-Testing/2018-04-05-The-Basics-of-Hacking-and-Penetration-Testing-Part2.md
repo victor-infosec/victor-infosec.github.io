@@ -29,17 +29,17 @@ CHAPTER 2 Reconnaissance
  
 	Googole hacking基本用法：
 	 
-	site:dsu.edu pat engebretson
+	**site**:dsu.edu pat engebretson
 	
-	allintitle:index of
+	**allintitle**:index of
 	
-	inurl:admin
+	**inurl**:admin
 	
-	cache:syngress.com
+	**cache**:syngress.com
 	
-	filetype:pdf
+	**filetype**:pdf
 	
-	site:dsu.edu filetype:pptx
+	**site**:dsu.edu **filetype**:pptx
 
  更全面的Google hacking技术参考;
  
@@ -47,10 +47,14 @@ CHAPTER 2 Reconnaissance
  
  Google Dorks Google Hacking Database (GHDB)	
  
- - other search engines: Yahoo, Bing, Ask, Dogpile,
+ - other search engines: Yahoo, Bing, Ask, Dogpile
+ 
  - Newsgroups and Bulletin Board Systems like UseNet and Google Groups
+ 
  - Support forums, Internet Relay Chart
+ 
  - social media like Facebook and Twitter
+ 
  - job hunting website
 
 3.2、E-mail Addresses
@@ -91,10 +95,10 @@ CHAPTER 2 Reconnaissance
  - nslookup
  
 ```
-	nslookup
-	\> server 8.8.8.8
-	\> set type=any
-	\> baidu.com
+nslookup
+\> server 8.8.8.8
+\> set type=any
+\> baidu.com
 ```
 
  - dig
