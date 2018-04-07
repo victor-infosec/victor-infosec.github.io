@@ -17,7 +17,7 @@ CHAPTER 2 Reconnaissance
 
 2、**Active reconnaissance**
 
-主动侦察需要直接访问目标系统，比如对目标网站做镜像，可以使用的工具有**HTTrack**、**wget**等。
+主动侦察需要直接访问目标系统，比如对目标网站做镜像，可以使用的工具有 HTTrack、wget等。
 
 3、**Passive reconnaissance**
 
@@ -73,7 +73,7 @@ CHAPTER 2 Reconnaissance
 
 命令行工具：`whois target_domain`
 
-在线查询网站： http://www.whois.net
+在线查询网站：[http://www.whois.net](http://www.whois.net)
 
  - whois ip
  
@@ -85,12 +85,12 @@ CHAPTER 2 Reconnaissance
 <img src="https://github.com/victor-infosec/victor-infosec.github.io/raw/master/_posts/books/The-Basics-of-Hacking-and-Penetration-Testing/4.png" alt="渗透测试流程4" height="50%" width="50%" />
 </div>
 
-3.5、	IP与域名之间的转换
+3.5、IP与域名之间的转换
 
     host target_hostname
     host IP_address
- 
- 3.6、	DNS信息
+
+3.6、DNS信息
 
  - nslookup
  
@@ -102,7 +102,6 @@ nslookup
 ```
 
  - dig
-		
 
 ```
 dig @target_ip
@@ -110,7 +109,6 @@ dig @192.168.1.23example.com –t AXFR
 ```
 
  - fierce
-		
 
 ```
 ./fierce.pl –dns trustedsec.com
