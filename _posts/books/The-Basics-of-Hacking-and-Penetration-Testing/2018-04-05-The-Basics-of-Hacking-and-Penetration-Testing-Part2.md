@@ -28,15 +28,22 @@ CHAPTER 2 Reconnaissance
  - Google Hacking
  Googole hacking基本用法：
 	 
-	 site:dsu.edu pat engebretson
+	site:dsu.edu pat engebretson
+	
 	allintitle:index of
+	
 	inurl:admin
+	
 	cache:syngress.com
+	
 	filetype:pdf
+	
 	site:dsu.edu filetype:pptx
 
- 更全面的Google hacking技术参考;'
- Google Hacking for Penetration Testers
+ 更全面的Google hacking技术参考;
+ \
+ Google Hacking for Penetration Testers 
+ \
  Google Dorks Google Hacking Database (GHDB)	
  
  - other search engines: Yahoo, Bing, Ask, Dogpile,
@@ -49,12 +56,17 @@ CHAPTER 2 Reconnaissance
 
 工具：The Harvester
 
+<div align="center" markdown="1">
+<img src="https://github.com/victor-infosec/victor-infosec.github.io/raw/master/_posts/books/The-Basics-of-Hacking-and-Penetration-Testing/3.png" alt="渗透测试流程3" height="50%" width="50%" />
+</div>
+
 3.3、whois
 
  - whois域名
  通过对域名的whois查询，可以知道域名的注册人、权威DNS服务器等信息。
 
 命令行工具：`whois target_domain`
+
 在线查询网站： http://www.whois.net
 
  - whois ip
@@ -62,6 +74,10 @@ CHAPTER 2 Reconnaissance
  通过对IP的whois查询，可以知道该IP所在的IP块、IP拥有者等信息。工具同上。
 
 3.4、网站综合信息查询 Netcraft
+
+<div align="center" markdown="1">
+<img src="https://github.com/victor-infosec/victor-infosec.github.io/raw/master/_posts/books/The-Basics-of-Hacking-and-Penetration-Testing/4.png" alt="渗透测试流程4" height="50%" width="50%" />
+</div>
 
 3.5、	IP与域名之间的转换
 
@@ -73,8 +89,11 @@ CHAPTER 2 Reconnaissance
  - nslookup
 
 	nslookup
+	
 	\> server 8.8.8.8
+	
 	\> set type=any
+	
 	\> baidu.com
 
  - dig
