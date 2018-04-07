@@ -1,6 +1,6 @@
 ---
 layout: post
-title: The Basics of Hacking and Penetration Testing | 201803
+title: The Basics of Hacking and Penetration Testing Part1
 key: 20180404
 category: books
 tags:
@@ -56,8 +56,3 @@ CHAPTER 1 What is Penetration Testing?
 <div align="center" markdown="1">
 <img src="https://github.com/victor-infosec/victor-infosec.github.io/raw/master/_posts/books/The-Basics-of-Hacking-and-Penetration-Testing/2.png" alt="渗透测试流程2" height="50%" width="50%" />
 </div>
-
-CHAPTER 2 Reconnaissance
---------------------------------------
-1、
-
