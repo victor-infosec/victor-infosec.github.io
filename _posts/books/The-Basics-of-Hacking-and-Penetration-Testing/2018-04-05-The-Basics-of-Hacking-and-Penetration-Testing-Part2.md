@@ -114,7 +114,7 @@ dig @192.168.1.23example.com –t AXFR
 ./fierce.pl –dns trustedsec.com
 ```
 
-3.7、	E-mail Servers
+3.7、E-mail Servers
 
 >Send an e-mail to the organization with an empty .bat file or a nonmalicious .exe file like calc.exe
 >Analysis  the header and body of the rejected message
