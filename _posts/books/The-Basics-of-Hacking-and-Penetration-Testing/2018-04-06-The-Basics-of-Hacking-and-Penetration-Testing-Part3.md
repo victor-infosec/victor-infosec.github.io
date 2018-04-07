@@ -40,7 +40,7 @@ medusa –h 192.168.18.132 –u ownedb –P /usr/share/john/password.lst –M ss
  - THC Hydra [https://www.thc.org/thc-hydra/](https://www.thc.org/thc-hydra/)
 
 
-3、系统密码破解神器 John the Ripper
+3、系统密码破解神器 **John the Ripper**
 
 本地Windows密码破解
 
@@ -77,7 +77,7 @@ medusa –h 192.168.18.132 –u ownedb –P /usr/share/john/password.lst –M ss
   samdump2 SAM sys_key.txt > /tmp/hash.txt
 ```
 
-5. Use JtR to crack the passwords.
+5、 Use JtR to crack the passwords.
 
 ```
   john /tmp/hashes.txt --format=nt
