@@ -1,3 +1,13 @@
+---
+layout: post
+title: The Basics of Hacking and Penetration Testing Part3
+key: 20180406
+category: books
+tags:
+  - 读书笔记
+lang: zh
+---
+
 CHAPTER4 Exploitation
 --------------------------------------
 1、渗透神器 **Metasploit**
