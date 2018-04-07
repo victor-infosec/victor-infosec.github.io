@@ -84,7 +84,7 @@ If you know of ports that you plan to open, you can list them under the **[Hidde
 常用命令
 
  <div align="center" markdown="1">
-<img src="https://github.com/victor-infosec/victor-infosec.github.io/raw/master/_posts/books/The-Basics-of-Hacking-and-Penetration-Testing/9.png" alt="渗透测试流程9" height="50%" width="50%" />
+<img src="https://github.com/victor-infosec/victor-infosec.github.io/blob/master/_posts/books/The-Basics-of-Hacking-and-Penetration-Testing/9.PNG" alt="渗透测试流程9" height="100%" width="100%" />
 </div>
 
 CHAPTER 8 Wrapping Up the Penetration Test
